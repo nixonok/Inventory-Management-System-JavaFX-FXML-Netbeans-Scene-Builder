@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddProductInterfaceController">
+    <children>
+      <Label layoutX="22.0" layoutY="21.0" text="Add Product">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="productIDTextField" disable="true" editable="false" focusColor="#2196f3" layoutX="112.0" layoutY="101.0" prefHeight="35.0" prefWidth="157.0" promptText="ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="productNameTextField" focusColor="#2196f3" layoutX="112.0" layoutY="160.0" prefHeight="35.0" prefWidth="157.0" promptText="Product Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="productLnvField" focusColor="#2196f3" layoutX="112.0" layoutY="226.0" prefHeight="35.0" prefWidth="157.0" promptText="LNV">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="productPriceField" focusColor="#2196f3" layoutX="112.0" layoutY="302.0" prefHeight="35.0" prefWidth="157.0" promptText="Price/Cost">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="productMaxField" focusColor="#2196f3" layoutX="112.0" layoutY="364.0" prefHeight="25.0" prefWidth="72.0" promptText="Max">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="productMinField" focusColor="#2196f3" layoutX="112.0" layoutY="424.0" prefHeight="25.0" prefWidth="72.0" promptText="Min">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="53.0" layoutY="105.0" prefHeight="27.0" prefWidth="43.0" text="ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="164.0" text="Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="230.0" text="Lnv">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="368.0" text="Max">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="431.0" text="Min">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="269.0" layoutY="511.0" onAction="#productSaveButtonAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: ababab;" text="Save" />
+      <JFXButton buttonType="RAISED" layoutX="199.0" layoutY="511.0" onAction="#closeButtonAction" style="-fx-background-color: ababab;" text="Cancel" />
+      <Label layoutX="50.0" layoutY="306.0" text="Price">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="partsTable1" layoutX="448.0" layoutY="61.0" prefHeight="167.0" prefWidth="441.0">
+         <columns>
+            <TableColumn fx:id="partsID1" editable="false" prefWidth="78.0" text="ID" />
+            <TableColumn fx:id="partsName1" prefWidth="141.0" text="Name" />
+            <TableColumn fx:id="partsLevel1" prefWidth="106.0" text="Level" />
+            <TableColumn fx:id="partsCost1" prefWidth="115.0" text="Cost Per Piece" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="799.0" layoutY="239.0" onAction="#addProductAssociatedPart" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: ababab;" text="Add" />
+      <TableView fx:id="partsTable" layoutX="448.0" layoutY="274.0" prefHeight="167.0" prefWidth="441.0">
+         <columns>
+            <TableColumn fx:id="partsID" editable="false" prefWidth="78.0" text="ID" />
+            <TableColumn fx:id="partsName" prefWidth="141.0" text="Name" />
+            <TableColumn fx:id="partsLevel" prefWidth="106.0" text="Level" />
+            <TableColumn fx:id="partsCost" prefWidth="115.0" text="Cost Per Piece" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="799.0" layoutY="455.0" onAction="#productPartDeleteAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: ababab;" text="Delete" />
+      <JFXButton buttonType="RAISED" layoutX="701.0" layoutY="455.0" onAction="#productPartDeAssociateAction" style="-fx-background-color: ababab;" text="De-Associate " />
+      <JFXButton buttonType="RAISED" layoutX="650.0" layoutY="455.0" onAction="#productPartEditAction" style="-fx-background-color: ababab;" text="Edit" />
+   </children>
+    
+</AnchorPane>

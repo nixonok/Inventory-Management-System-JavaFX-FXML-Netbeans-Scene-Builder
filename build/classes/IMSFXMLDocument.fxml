@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" pickOnBounds="false" prefHeight="355.0" prefWidth="785.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IMSFXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="22.0" layoutY="28.0" minHeight="16" minWidth="69" text="Inventory Management System">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Region layoutX="32.0" layoutY="90.0" prefHeight="228.0" prefWidth="364.0" style="-fx-background-color: #E0E0E0;" />
+      <Region layoutX="406.0" layoutY="90.0" prefHeight="228.0" prefWidth="364.0" style="-fx-background-color: #E0E0E0;" />
+      <Label fx:id="label1" alignment="CENTER" layoutX="32.0" layoutY="96.0" minHeight="16" minWidth="69" text="Parts">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label11" alignment="CENTER" layoutX="422.0" layoutY="96.0" minHeight="16" minWidth="69" text="Products">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="184.0" layoutY="97.0" onAction="#partsSearchButtonAction" ripplerFill="#2196f3" style="-fx-background-color: FAFAFA;" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="partsFilterString" focusColor="#2196f3" labelFloat="true" layoutX="245.0" layoutY="90.0" promptText="Part name" />
+      <JFXButton buttonType="RAISED" layoutX="546.0" layoutY="97.0" onAction="#productSearchButtonAction" ripplerFill="#2196f3" style="-fx-background-color: FAFAFA;" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="productFilterString" focusColor="#2196f3" labelFloat="true" layoutX="608.0" layoutY="90.0" promptText="Part name" />
+      <JFXButton buttonType="RAISED" layoutX="328.0" layoutY="285.0" onAction="#deletePartsAction" ripplerFill="#2196f3" style="-fx-background-color: FAFAFA;" text="Delete" />
+      <JFXButton buttonType="RAISED" layoutX="265.0" layoutY="285.0" onAction="#partsModifyButtonAction" ripplerFill="#2196f3" style="-fx-background-color: FAFAFA;" text="Modify" />
+      <JFXButton fx:id="addPartsButton" buttonType="RAISED" layoutX="219.0" layoutY="285.0" onAction="#partAddButtonAction" ripplerFill="#2196f3" style="-fx-background-color: FAFAFA;" text="Add" />
+      <JFXButton buttonType="RAISED" layoutX="704.0" layoutY="285.0" onAction="#deleteProductSelected" ripplerFill="#2196f3" style="-jfx-button-type: RAISED; -fx-background-color: FAFAFA;" text="Delete" />
+      <JFXButton buttonType="RAISED" layoutX="638.0" layoutY="285.0" onAction="#productModifyButtonAction" ripplerFill="#2196f3" style="-fx-background-color: FAFAFA;" text="Modify" />
+      <JFXButton buttonType="RAISED" layoutX="589.0" layoutY="285.0" onAction="#productAddButtonAction" ripplerFill="#2196f3" style="-fx-background-color: FAFAFA;" text="Add" />
+      <TableView fx:id="productTable" layoutX="407.0" layoutY="133.0" prefHeight="143.0" prefWidth="364.0">
+         <columns>
+            <TableColumn fx:id="productID" editable="false" prefWidth="61.0" text="ID" />
+            <TableColumn fx:id="productName" prefWidth="101.0" text="Name" />
+            <TableColumn fx:id="productLevel" prefWidth="75.0" text="Level" />
+            <TableColumn fx:id="productCost" prefWidth="109.0" text="Cost Per Piece" />
+         </columns>
+      </TableView>
+      <TableView fx:id="partsTable" layoutX="32.0" layoutY="133.0" prefHeight="143.0" prefWidth="364.0">
+         <columns>
+            <TableColumn fx:id="partsID" editable="false" prefWidth="57.0" text="ID" />
+            <TableColumn fx:id="partsName" prefWidth="116.0" text="Name" />
+            <TableColumn fx:id="partsLevel" prefWidth="74.0" text="Level" />
+            <TableColumn fx:id="partsCost" prefWidth="100.0" text="Cost Per Piece" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddProductPartInterfaceController">
+   <children>
+      <Label layoutX="22.0" layoutY="21.0" text="Add Product Part">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="inHouseButton" layoutX="146.0" layoutY="23.0" onAction="#inHouseButtonAction" selected="true" text="In-House" />
+      <JFXRadioButton fx:id="outsourcedButton" layoutX="256.0" layoutY="23.0" onAction="#outsourceButtonPress" text="Outsourced" />
+      <JFXTextField fx:id="partIDTextField" disable="true" editable="false" focusColor="#2196f3" layoutX="118.0" layoutY="66.0" promptText="Auto Genarated">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="partNameTextField" focusColor="#2196f3" layoutX="118.0" layoutY="122.0" promptText="Part Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="partLnvField" focusColor="#2196f3" layoutX="118.0" layoutY="180.0" promptText="LNV">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="partPriceField" focusColor="#2196f3" layoutX="118.0" layoutY="246.0" promptText="Price/Cost">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="partMaxField" focusColor="#2196f3" layoutX="118.0" layoutY="296.0" prefHeight="25.0" prefWidth="72.0" promptText="Max">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="partMinField" focusColor="#2196f3" layoutX="287.0" layoutY="296.0" prefHeight="25.0" prefWidth="79.0" promptText="Min">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="partMachineIDField" layoutX="171.0" layoutY="366.0" promptText="machine id" />
+      <JFXTextField fx:id="partCompanyNameField" focusColor="#2196f3" layoutX="208.0" layoutY="366.0" visible="false" />
+      <Label layoutX="48.0" layoutY="74.0" prefHeight="27.0" prefWidth="43.0" text="ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="130.0" text="Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="184.0" text="Lnv">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="300.0" text="Max">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="244.0" layoutY="300.0" text="Min">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="partCompanyNameLabel" layoutX="42.0" layoutY="365.0" text="Company Name" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="323.0" layoutY="409.0" onAction="#partSaveButtonAction" style="-fx-background-color: ababab;" text="Save" />
+      <JFXButton buttonType="RAISED" layoutX="261.0" layoutY="409.0" onAction="#closeButtonAction" style="-fx-background-color: ababab;" text="Cancel" />
+      <Label layoutX="42.0" layoutY="250.0" text="Price">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      
+      <Label fx:id="partMachineIDLabel" layoutX="47.0" layoutY="365.0" text="Machine ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      
+   </children>
+</AnchorPane>
