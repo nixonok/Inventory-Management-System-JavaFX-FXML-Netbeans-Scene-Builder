@@ -104,21 +104,34 @@ J. Write code to implement exception controls with custom error messages for eac
 ### GUI:
 
 A. Main screen 
+
+![menu](https://user-images.githubusercontent.com/10691766/29241971-0bdc88e4-7fa6-11e7-86c8-2db7917762af.jpg)
  
 B. “Add Part” screen
+
+![add part window](https://user-images.githubusercontent.com/10691766/29241970-0bd8bec6-7fa6-11e7-9b10-189f74b6d96f.jpg)
  
 The user has the option to select “In-House” or “Outsourced” to categorize the part.  If the user selects “Outsourced,” the “Company Name” field is available.
  
 If the user selects “In-House,” the “Machine ID” field is available.
 C.  Modify Part
+
+![modify part window](https://user-images.githubusercontent.com/10691766/29241972-0beba4dc-7fa6-11e7-8747-e9356307d791.jpg)
  
 The user has the option to select “In-House” or “Outsourced” to categorize the part.  If the user selects “Outsourced,” the “Company Name” field is available.  The “Modify Part” screen has the same functionality as the “Add Part” screen, but the fields are populated with data that was previously entered and saved.  
 
  
 If the user selects “In-House,” the “Machine ID” field is available.
 D.  Add Product
+
+![add product part window](https://user-images.githubusercontent.com/10691766/29241969-0bd16c34-7fa6-11e7-99ca-ff4212e3d545.jpg)
  
 E. Modify Product
    
 The “Modify Product” screen has the same functionality as the “Add Product” screen, but the parts and fields are populated with data that was previously entered and saved.  
   
+![update product window](https://user-images.githubusercontent.com/10691766/29241967-0bcc2e5e-7fa6-11e7-890b-75e15b0a49eb.jpg)
+
+F. Delete Product:
+
+![causion](https://user-images.githubusercontent.com/10691766/29241968-0bcf2d52-7fa6-11e7-88c6-5a4f6dc6594b.jpg)
